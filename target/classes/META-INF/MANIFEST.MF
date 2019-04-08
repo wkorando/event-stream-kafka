@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: William.Korando@ibm.com
+Build-Jdk: 11.0.1
+Implementation-Title: event-streams-kafka
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ibm.developer
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/event-streams-kafka
+Created-By: Maven Integration for Eclipse
+
