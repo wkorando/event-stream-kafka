@@ -1,7 +1,7 @@
 package com.ibm.developer.eventstreamskafka;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EventStreamsController {
 	private KafkaTemplate<String, String> template;
-	private List<String> messages = new ArrayList<>();
+	private List<String> messages = new CopyOnWriteArrayList<>();
 
 	public EventStreamsController(KafkaTemplate<String, String> template) {
 		this.template = template;
